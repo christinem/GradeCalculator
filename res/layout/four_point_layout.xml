@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@drawable/basic">
+    
+    <Button
+            android:id="@+id/add_grade_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:text="Add Another Grade"
+            android:onClick="revealRow"
+            android:visibility="visible" />
+    
+<ScrollView
+    android:id="@+id/four_point_scroll"
+    android:layout_marginRight="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    android:layout_below="@id/add_grade_button" >
+    
+    <TableLayout 
+    android:id="@+id/four_point_table"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    tools:context=".GPACalculatorActivity" >
+    
+
+     <TableRow
+      android:id="@+id/grade1" android:visibility="visible">
+
+             <EditText
+                 android:id="@+id/Grade1"
+                 android:layout_width="0dp"
+                 android:layout_weight="10"
+                 android:layout_height="wrap_content"
+                 android:layout_marginLeft="10dp"
+                 android:hint="Grade"
+                 android:digits="0123456789."
+                 android:inputType="phone"/>
+
+             <EditText
+                 android:id="@+id/Weight1"
+                 android:layout_width="0dp"
+                 android:layout_weight="10"
+                 android:layout_height="wrap_content"
+                 android:layout_marginLeft="10dp"
+                 android:layout_marginRight="10dp"
+                 android:hint="GPA Weight"
+                 android:digits="0123456789."
+                 android:inputType="phone">
+
+                 <requestFocus />
+             </EditText>
+             
+     </TableRow>
+     
+     <TableRow
+      android:id="@+id/grade2" android:visibility="invisible">
+
+             <EditText
+                 android:id="@+id/Grade2"
+                 android:layout_width="0dp"
+                 android:layout_weight="10"
+                 android:layout_height="wrap_content"
+                 android:layout_marginLeft="10dp"
+                 android:hint="Grade"
+                 android:digits="0123456789."
+                 android:inputType="phone"/>
+
+             <EditText 
+                 android:id="@+id/Weight2" 
+                 android:layout_width="0dp"
+                 android:layout_weight="10"
+                 android:layout_height="wrap_content" 
+                 android:layout_marginLeft="10dp" 
+                 android:layout_marginRight="10dp"
+                 android:hint="GPA Weight"
+                 android:digits="0123456789."
+                 android:inputType="phone" />
+
+     </TableRow>
+     
+     <TableRow
+      android:id="@+id/grade3" android:visibility="invisible">
+
+             <EditText
+                 android:id="@+id/Grade3"
+                 android:layout_width="0dp"
+                 android:layout_weight="10"
+                 android:layout_height="wrap_content"
+                 android:layout_marginLeft="10dp"
+                 android:hint="Grade"
+                 android:digits="0123456789."
+                 android:inputType="phone" />
+
+             <EditText 
+                 android:id="@+id/Weight3" 
+                 android:layout_width="0dp"
+                 android:layout_weight="10"
+                 android:layout_height="wrap_content" 
+                 android:layout_marginLeft="10dp" 
+                 android:layout_marginRight="10dp" 
+                 android:hint="GPA Weight"
+                 android:digits="0123456789."
+                 android:inputType="phone" />
+
+
+     </TableRow>
+     
+     <TableRow
+      android:id="@+id/grade4" android:visibility="invisible">
+
+             <EditText
+                 android:id="@+id/Grade4"
+                 android:layout_width="0dp"
+                 android:layout_weight="10"
+                 android:layout_height="wrap_content"
+                 android:layout_marginLeft="10dp"
+                 android:hint="Grade"
+                 android:digits="0123456789."
+                 android:inputType="phone" />
+
+             <EditText 
+                 android:id="@+id/Weight4" 
+                 android:layout_width="0dp"
+                 android:layout_weight="10"
+                 android:layout_height="wrap_content" 
+                 android:layout_marginLeft="10dp"  
+                 android:layout_marginRight="10dp"
+                 android:hint="GPA Weight" 
+                 android:digits="0123456789."
+                 android:inputType="phone"/>
+
+
+     </TableRow>
+     
+     <TableRow
+      android:id="@+id/grade5" android:visibility="invisible">
+
+             <EditText
+                 android:id="@+id/Grade5"
+                 android:layout_width="0dp"
+                 android:layout_weight="10"
+                 android:layout_height="wrap_content"
+                 android:layout_marginLeft="10dp"
+                 android:hint="Grade"
+                 android:digits="0123456789."
+                 android:inputType="phone" />
+
+             <EditText 
+                 android:id="@+id/Weight5" 
+                 android:layout_width="0dp"
+                 android:layout_weight="10"
+                 android:layout_height="wrap_content" 
+                 android:layout_marginLeft="10dp"  
+                 android:layout_marginRight="10dp"
+                 android:hint="GPA Weight" 
+                 android:digits="0123456789."
+                 android:inputType="phone"/>
+
+
+     </TableRow>
+     
+     <TableRow
+      android:id="@+id/grade6" android:visibility="invisible">
+
+             <EditText
+                 android:id="@+id/Grade6"
+                 android:layout_width="0dp"
+                 android:layout_weight="10"
+                 android:layout_height="wrap_content"
+                 android:layout_marginLeft="10dp"
+                 android:hint="Grade"
+                 android:digits="0123456789."
+                 android:inputType="phone" />
+
+             <EditText 
+                 android:id="@+id/Weight6" 
+                 android:layout_width="0dp"
+                 android:layout_weight="10"
+                 android:layout_height="wrap_content" 
+                 android:layout_marginLeft="10dp"  
+                 android:layout_marginRight="10dp"
+                 android:hint="GPA Weight" 
+                 android:digits="0123456789."
+                 android:inputType="phone"/>
+
+
+     </TableRow>
+     
+     <TableRow
+      android:id="@+id/grade7" android:visibility="invisible">
+
+             <EditText
+                 android:id="@+id/Grade7"
+                 android:layout_width="0dp"
+                 android:layout_weight="10"
+                 android:layout_height="wrap_content"
+                 android:layout_marginLeft="10dp"
+                 android:hint="Grade"
+                 android:digits="0123456789."
+                 android:inputType="phone" />
+
+             <EditText 
+                 android:id="@+id/Weight7" 
+                 android:layout_width="0dp"
+                 android:layout_weight="10"
+                 android:layout_height="wrap_content" 
+                 android:layout_marginLeft="10dp"  
+                 android:layout_marginRight="10dp"
+                 android:hint="GPA Weight"
+                 android:digits="0123456789." 
+                 android:inputType="phone"/>
+
+
+     </TableRow>
+     
+     <TableRow
+      android:id="@+id/grade8" android:visibility="invisible">
+
+             <EditText
+                 android:id="@+id/Grade8"
+                 android:layout_width="0dp"
+                 android:layout_weight="10"
+                 android:layout_height="wrap_content"
+                 android:layout_marginLeft="10dp"
+                 android:hint="Grade"
+                 android:digits="0123456789."
+                 android:inputType="phone" />
+
+             <EditText 
+                 android:id="@+id/Weight8" 
+                 android:layout_width="0dp"
+                 android:layout_weight="10"
+                 android:layout_height="wrap_content" 
+                 android:layout_marginLeft="10dp"
+                 android:layout_marginRight="10dp"  
+                 android:hint="GPA Weight"
+                 android:digits="0123456789." 
+                 android:inputType="phone" />
+
+
+     </TableRow>
+     
+     <TableRow
+      android:id="@+id/grade9" android:visibility="invisible">
+
+             <EditText
+                 android:id="@+id/Grade9"
+                 android:layout_width="0dp"
+                 android:layout_weight="10"
+                 android:layout_height="wrap_content"
+                 android:layout_marginLeft="10dp"
+                 android:hint="Grade"
+                 android:digits="0123456789."
+                 android:inputType="phone"/>
+
+             <EditText 
+                 android:id="@+id/Weight9" 
+                 android:layout_width="0dp"
+                 android:layout_weight="10"
+                 android:layout_height="wrap_content" 
+                 android:layout_marginLeft="10dp" 
+                 android:layout_marginRight="10dp"
+                 android:hint="GPA Weight"
+                 android:digits="0123456789."
+                 android:inputType="phone" />
+
+     </TableRow>
+     
+     <TableRow
+      android:id="@+id/grade10" android:visibility="invisible">
+
+             <EditText
+                 android:id="@+id/Grade10"
+                 android:layout_width="0dp"
+                 android:layout_weight="10"
+                 android:layout_height="wrap_content"
+                 android:layout_marginLeft="10dp"
+                 android:hint="Grade"
+                 android:digits="0123456789."
+                 android:inputType="phone"/>
+
+             <EditText 
+                 android:id="@+id/Weight10" 
+                 android:layout_width="0dp"
+                 android:layout_weight="10"
+                 android:layout_height="wrap_content" 
+                 android:layout_marginLeft="10dp" 
+                 android:layout_marginRight="10dp"
+                 android:hint="GPA Weight"
+                 android:digits="0123456789."
+                 android:inputType="phone" />
+
+     </TableRow>
+     
+     <TableRow
+         android:id="@+id/calculate"
+         android:visibility="visible" >
+
+         
+
+     </TableRow>
+
+</TableLayout>
+</ScrollView>
+<RelativeLayout
+    android:id="@+id/four_point_bottom"
+    android:layout_alignParentBottom="true" 
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent" >
+
+    <Button
+             android:id="@+id/calculate_button"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_centerHorizontal="true"
+             android:layout_marginBottom="10dp"
+             android:onClick = "sendToCalculate"
+             android:text="Calculate" />
+
+	<TextView
+             android:id="@+id/total_four_point"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_centerHorizontal="true"
+             android:layout_below="@id/calculate_button"
+             android:layout_marginBottom="10dp"
+             android:gravity="center"
+             android:includeFontPadding="false" />
+
+</RelativeLayout>
+</RelativeLayout>

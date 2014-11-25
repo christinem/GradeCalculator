@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" 
+     xmlns:yourapp="http://schemas.android.com/apk/res-auto" >
+     <item
+        android:id="@+id/new_calculation"
+        android:icon="@drawable/ic_action_new"
+        android:title="@string/gpa_calculator" 
+        android:showAsAction="ifRoom">
+        <menu>
+            <item
+                android:id="@+id/gpa_calculation"
+                android:title="GPA Calculation" />
+            <item 
+                android:id="@+id/final_grade_calculation"
+                android:title="Final Grade Calculation" />
+        </menu>
+    </item>
+
+    
+
+</menu>

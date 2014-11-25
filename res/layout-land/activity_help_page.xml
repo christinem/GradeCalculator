@@ -1,0 +1,43 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/basic"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".HelpPageActivity" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:text="Thank you for trying out Grade Calculator! This app is quite simple to use!\n
+\n
+GPA Calculation:\n
+\n
+Herec you can calculate your overall GPA based on a certain point scale.\n
+Your Grade is a Grade out of 1-100, and your GPA weight is the amount of credits your course is worth - for example, 0.5 or 1.0 credits.\n
+\n
+Final Grade Calculation:\n
+\n
+Here, you can calculate your final grade standing in a course.\n
+Your Grade is a Grade, again, a number from 1-100, and your Course Weight is the percentage amount of that mark towards your overall grade - 
+for example, an assignment worth 30% of your grade. This is also a number from 1-100.\n
+\n
+As you add grades (the app currently supports calculation of up to 10 grades), you can scroll through to get access to all of the grades.\n
+\n
+I hope you enjoy this application, and more features are to come in the future!\n
+\n
+If you would like to contact me personally with any suggestions, comments, or issues, feel free to contact me at:\n
+gradecalculator@gmail.com." />
+
+</RelativeLayout>
+</ScrollView>

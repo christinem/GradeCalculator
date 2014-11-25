@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- GPA Calculator -->
+    <string name="gpa_calculator">GPA Calculator</string>
+    <string name="app_name">Grade Calculator</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_gpa_calculator">GPA Calculator</string>
+    <string name="title_activity_final_grade_calculator">Final Grade Calculator</string>
+
+    <!-- Spinner String Array -->
+    <string-array name="scales_array">
+        <item>4.0 Scale</item>
+        <item>9.0 Scale</item>
+    </string-array>
+
+    <!-- Final Grade Spinner String Array -->
+    <string-array name="final_grade_array">
+        <item>Final Grade</item>
+    </string-array>
+
+    <string name="title_activity_gpacalculator">GPACalculatorActivity</string>
+    <string name="title_section1">4.0 Scale</string>
+    <string name="title_section2">9.0 Scale</string>
+    <string name="title_activity_help_page">Help Page</string>
+    <string name="title_final_grade">Final Grade</string>
+    <string name="title_activity_school">Search By School</string>
+
+</resources>
