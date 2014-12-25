@@ -159,7 +159,7 @@ public class GPACalculatorActivity extends FragmentActivity implements
 		 if(newFragment instanceof FourPointFragment) {
 			 ((FourPointFragment) newFragment).sendToCalculate();
 		 } else if (newFragment instanceof NinePointFragment) {
-			// include when implemented Nine Point Scale 		 
+             ((NinePointFragment) newFragment).sendToCalculate();
 		 }
 		 
 	 }

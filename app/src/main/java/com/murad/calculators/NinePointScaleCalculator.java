@@ -22,30 +22,26 @@ public NinePointScaleCalculator() {
 	public double getGPARating(double grade){
 		double rating = 0.0;
 		
-		if (grade < 50) {
+		if (grade >= 0 && grade <= 39) {
 			rating = 0.0;
-		} else if (grade >= 50 && grade <= 52) {
-			rating = 0.7;
-		} else if (grade >= 53 && grade <= 56) {
+		} else if (grade >= 40 && grade <= 49) {
 			rating = 1.0;
-		} else if (grade >= 57 && grade <= 59) {
-			rating =1.3;
-		} else if (grade >= 60 && grade <= 62) {
-			rating = 1.7;
-		} else if (grade >= 63 && grade <= 66) {
+		} else if (grade >= 50 && grade <= 54) {
 			rating = 2.0;
-		} else if (grade >= 67 && grade <= 69) {
-			rating = 2.3;
-		} else if (grade >= 70 && grade <= 72) {
-			rating = 2.7;
-		} else if (grade >= 73 && grade <= 76) {
+		} else if (grade >= 55 && grade <= 59) {
 			rating = 3.0;
-		} else if (grade >= 77 && grade <= 79) {
-			rating = 3.3;
-		} else if (grade >= 80 && grade <= 84) {
-			rating = 3.7;
-		} else if (grade >= 85) {
+		} else if (grade >= 60 && grade <= 64) {
 			rating = 4.0;
+		} else if (grade >= 65 && grade <= 69) {
+			rating = 5.0;
+		} else if (grade >= 70 && grade <= 74) {
+			rating = 6.0;
+		} else if (grade >= 75 && grade <= 79) {
+			rating = 7.0;
+		} else if (grade >= 80 && grade <= 89) {
+			rating = 8.0;
+		} else if (grade >= 90 && grade <= 100) {
+			rating = 9.0;
 		}
 		
 		return rating;
