@@ -169,7 +169,12 @@ public class GPACalculatorActivity extends FragmentActivity implements
 	 * @param view A User Interface Type.
 	 */
 	public void revealRow(View view1) {
-		View view = (View) findViewById(R.id.four_point_table);
+        View view = null;
+        if(newFragment instanceof FourPointFragment) {
+            view = (View) findViewById(R.id.four_point_table);
+        } else if (newFragment instanceof NinePointFragment) {
+            view = (View) findViewById(R.id.nine_point_table);
+        }
 		GRADE_POSITION += 1;
 		if (GRADE_POSITION == 2) {
 			TableRow row = (TableRow) view.findViewById(R.id.grade2);
